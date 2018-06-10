@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>transform小练习</title>
+      <style>
+          .content>div{
+              float: left;
+              margin: 20px;
+          }
+          .content{
+              max-width: 1000px;
+              margin: 0 auto;
+          }
+          .box{
+              width: 100px;
+              height: 120px;
+              background: #f9f7f8;
+              border: 1px solid #d0d0d0;
+              text-align: center;  /* 文字水平居中 */
+              line-height: 100px;  /* 文字垂直居中 */
+          }
+          .box1{
+              transform: skewX(30deg);
+          }
+          .box2{
+              transform: scale(0.5,1);
+          }
+          .box3{
+              transform: rotate(45deg);
+          }
+          .box4{
+              transform: translate(20px,40px);
+          }
+          .box5{
+              transform: matrix(1,1,0,0.5,40,60);
+          }
+      </style>
+    </head>
+    <body>
+        <div class="content">
+            <div class="box">box0</div><!-- 原盒子 -->
+            <div class="box box1">box1</div><!-- 向左倾斜30度 skew-->
+            <div class="box box2">box2</div><!-- 压缩2倍 scaleY-->
+            <div class="box box3">box3</div>   <!-- 旋转45度 rotate-->
+            <div class="box box4">box4</div> <!-- x轴位移10px，y轴位移20px translate-->
+            <div class="box box5">box5</div><!-- 同时包含上述属性 matrix(缩放scaleY，旋转skewY,旋转skewX，缩放scaleX、移动translateX、移动translateY)-->
+        </div>
+
+        <script>
+
+        </script>
+    </body>
+</html>
